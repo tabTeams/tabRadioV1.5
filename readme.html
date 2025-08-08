@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TABRadio Add-on for NVDA - User Guide</title>
+<style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+    h1, h2 { color: #333; }
+    pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+    .section { margin-bottom: 30px; }
+</style>
+</head>
+<body>
+    <h1>คู่มือการใช้งาน TABRadio Add-on for NVDA</h1>
+    <div class="section">
+        <h2>ภาพรวม:</h2>
+        <p>TABRadio เป็น Add-on สำหรับ NVDA ที่ช่วยให้ผู้ใช้สามารถฟังวิทยุออนไลน์และทีวีออนไลน์ได้ง่ายๆ ผ่านปุ่มลัด โดยสามารถบันทึกสถานะการฟังล่าสุด (resume) เพื่อกลับมาฟังต่อได้แม้ปิด NVDA ไปแล้ว</p>
+    </div>
+    <div class="section">
+        <h2>ปุ่มลัดหลัก:</h2>
+        <pre>
+NVDA+Shift+Space    : เปิด/ปิดการทำงานของ TABRadio
+NVDA+Shift+F1: เล่นโหมดทีวี
+NVDA+Shift+F2: เล่นโหมดวิทยุ
+NVDA+Alt+Space      : ประกาศว่ากำลังฟังช่องอะไรอยู่
+NVDA+Shift+F4       : เพิ่มเสียง (+10%)
+NVDA+Shift+F3       : ลดเสียง (-10%)
+NVDA+Shift+Right    : ไปยังช่องถัดไป
+NVDA+Shift+Left     : ไปยังช่องก่อนหน้า
+        </pre>
+    </div>
+    <div class="section">
+        <h2>วิธีใช้งาน:</h2>
+        <ol>
+            <li>เปิด TABRadio: กด NVDA+Shift+Space เพื่อเริ่มทำงาน หากเคยฟังช่องใดไว้ก่อนปิด NVDA จะกลับมาฟังช่องนั้นทันที</li>
+            <li>สลับโหมด วิทยุ/ทีวี: กด NVDA+Shift+F1/F2 เพื่อสลับโหมด ระบบจะจำโหมดล่าสุดไว้</li>
+            <li>เลือกช่อง: NVDA+Shift+Right Arrow เพื่อไปช่องถัดไป, NVDA+Shift+Left Arrow เพื่อย้อนกลับช่องก่อนหน้า</li>
+            <li>ปรับระดับเสียง: เพิ่มเสียง NVDA+Shift+F4, ลดเสียง NVDA+Shift+F3</li>
+            <li>ฟังสถานะปัจจุบัน: กด NVDA+Alt+Space เพื่อฟังชื่อช่องที่กำลังเล่นอยู่</li>
+        </ol>
+    </div>
+    <div class="section">
+        <h2>หมายเหตุ:</h2>
+        <ul>
+            <li>TABRadio จะบันทึกช่อง, ระดับเสียง, และโหมดล่าสุดไว้ใน state.json</li>
+            <li>ต้องมี VLC หรือ FFplay ติดตั้งในเครื่อง</li>
+            <li>ใช้ได้กับ Windows และ Linux</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h1>User Guide for TABRadio Add-on for NVDA</h1>
+    <div class="section">
+        <h2>Overview:</h2>
+        <p>TABRadio is an NVDA add-on that allows you to listen to online radio and TV streams using keyboard shortcuts. It saves your last playback state (resume) so you can continue where you left off even after restarting NVDA.</p>
+    </div>
+    <div class="section">
+        <h2>Main Hotkeys:</h2>
+        <pre>
+NVDA+Shift+Space    : Toggle TABRadio on/off
+NVDA+Shift+F1/F2      : Switch between Radio and TV mode
+NVDA+Alt+Space      : Announce the currently playing channel
+NVDA+Shift+F4       : Increase volume (+10%)
+NVDA+Shift+F3       : Decrease volume (-10%)
+NVDA+Shift+Right    : Next channel
+NVDA+Shift+Left     : Previous channel
+        </pre>
+    </div>
+    <div class="section">
+        <h2>How to Use:</h2>
+        <ol>
+            <li>Start TABRadio: Press NVDA+Shift+Space to activate the add-on. If you were listening to a channel before closing NVDA, it will automatically resume.</li>
+            <li>Switch Radio/TV Mode: Press NVDA+Shift+F1 or F2 to toggle between radio and TV mode. The last mode will be remembered.</li>
+            <li>Select Channels: Next channel - NVDA+Shift+Right Arrow; Previous channel - NVDA+Shift+Left Arrow</li>
+            <li>Adjust Volume: Increase volume - NVDA+Shift+F4; Decrease volume - NVDA+Shift+F3</li>
+            <li>Announce Current Status: Press NVDA+Alt+Space to hear the name of the channel currently playing</li>
+        </ol>
+    </div>
+    <div class="section">
+        <h2>Notes:</h2>
+        <ul>
+            <li>TABRadio saves current channel, volume level, and mode in state.json</li>
+            <li>Requires VLC or FFplay installed</li>
+            <li>Compatible with Windows and Linux</li>
+        </ul>
+    </div>
+</body>
+</html>
